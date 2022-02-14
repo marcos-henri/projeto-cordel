@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    /*Variáveis*/
+
+    --fonte1: 'Verdana', Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+ 
+        /* == HEADER == */
+
+header {
+    background-color: black;
+    text-align: center;
+
+
+}
+
+header h1 {
+    color: white;
+    font-variant: small-caps;
+    padding-top: 80px;
+    font-family: var(--fonte2);
+    font-weight: normal;
+    font-size: 10vw;
+}
+
+header p {
+    color: white;
+    padding: 5vw;
+    font-family: var(--fonte1);
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+        /* == MAIN == */
+
+    /* SECTIONS */
+
+section {
+    font-family: var(--fonte3);
+    font-size: 4vw;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    padding-left: 30px;
+
+}
+
+section > p {
+    padding-bottom: 2.5em;
+}
+
+.normal {
+    padding-bottom: 60px;
+    background-color: white;
+}
+
+.imagem {
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.432);
+    background-position: right top;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.imagem > p {
+    text-shadow: 2px 2px 0px black;
+}
+
+#img01 {
+    background-image: url('../imagens/background001.jpg');
+}
+
+#img02 {
+    background-image: url('../imagens/background002.jpg');
+}
+
+#img01 p {
+    background-color: rgba(0, 0, 0, 0.453);
+    color: white;
+    display: inline-block;
+    padding: 5px;
+}
+
+#img02 p {
+    background-color: rgba(0, 0, 0, 0.453);
+    color: white;
+    display: inline-block;
+    padding: 5px;
+
+}
+
+        /* == FOOTER ==*/
+
+footer {
+    background-color: black;
+    padding: 10px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    font-family: var(--fonte1);
+    font-size: 0.8em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+
+}
